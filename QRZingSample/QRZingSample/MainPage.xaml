@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:QRZingSample"
+             x:Class="QRZingSample.MainPage">
+
+    <StackLayout Spacing="10">
+    <Button x:Name="ScanButton" Text="Click Me"  >
+        Click Me !
+    </Button>
+    <Entry x:Name="EScan" 
+           Placeholder="Here is text"/>
+    </StackLayout>
+</ContentPage>
