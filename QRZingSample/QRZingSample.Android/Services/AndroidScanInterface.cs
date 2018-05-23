@@ -31,6 +31,7 @@ namespace QRZingSample.Droid.Services
             String resultString = "";
             try
             {
+                //setting option for the mobile barcode 
                 var scanOption = new MobileBarcodeScanningOptions();
                 scanOption.AutoRotate = true;
                 scanOption.PossibleFormats = new List<ZXing.BarcodeFormat>()
@@ -42,13 +43,16 @@ namespace QRZingSample.Droid.Services
                     ZXing.BarcodeFormat.QR_CODE
                 };
 
-               
+
+                //create the scanner
                 var scanner = new MobileBarcodeScanner()
                 {
                     TopText = "Scan QR here",
+                    BottomText = "EHEHHEHEHE"
                 };
+                //scan for result
                 var result = await scanner.Scan(scanOption);
-
+                //voila
                 resultString = result.ToString();
             }
             catch(Exception ex)
