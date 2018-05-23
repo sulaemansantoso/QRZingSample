@@ -25,7 +25,8 @@ namespace QRZingSample
             //implement scanning method on AndroidScanInterface
 
             var result = DependencyService.Get<Services.IScanInterface>();
-            EScan.Text = await result.ScanAsync() ;
+            var resultText = await result.ScanAsync() ;
+            EScan.Text = "Result " + resultText;
         }
     }
 }
