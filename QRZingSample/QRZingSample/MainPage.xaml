@@ -6,9 +6,11 @@
 
     <StackLayout Spacing="10">
     <Button x:Name="ScanButton" Text="Click Me"  >
-        Click Me !
+        Click Me ! 
     </Button>
     <Entry x:Name="EScan" 
            Placeholder="Here is text"/>
+        <Button x:Name="AnotherButton" Text="Click Me too "></Button>
     </StackLayout>
+   
 </ContentPage>
